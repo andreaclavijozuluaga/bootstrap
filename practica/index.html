@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+
+    <!--este es elinicio de mi encabezado-->
+    <header class="bg-primary py-2"><!--py-2 para dar padding top y bottom-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="">
+                        <img src="/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <form action=""><!--creo un formulario para crear en espacio de search-->
+                        <div class="row no-gutters"><!--quita los espacios entre las columnas / esto esta dentro del row que esta envolviendo estas dos columnas -->
+                            <div class="col-10"><!--col-10 ...mpara cambiar el tamaño del ancho de mi columna text-->
+                                <input class="bg-white w-100 border-0 px-4 rounded-left" type="text" placeholder="Amigos, lugares y cosas que te gustan">
+                                <!--para redondear boton solo a un lado ya sea derecho o izquierdo rounded-left-->
+                            </div>
+                            <div class="col-2"><!--para que mi boton quede mas estrecho-->
+                                <button class="bg-white w-100 border-0 px-4 rounded-right "><i class="fas fa-search"></i></button><!-- la w es el ancho, px es el padding derecha e izquierda-->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <nav class="col d-flex justify-content-between ml-auto"><!--nav para crear menu // justify-content-between / para agregar separacion a todas las columnas agregamos un flex-->
+                    <a class="text-white" href=""> <i class="fas fa-users"></i> </a> <!--usuarios-->
+                    <a class="text-white" href=""> <i class="fas fa-bell"></i> </a> <!-- campana notificacion-->
+                    <a class="text-white" href=""> <i class="fas fa-comments"></i> </a> <!--conversaciones-->
+                    <a class="text-white" href=""> <img class="rounded-circle" src="/img/persona2.jpg" width="22" height="22" alt=""> </a> <!--a la etiqueta img se le puede crear un alto y un ancho dentro de ella para controla el tamaño, para darle un border creamos una clase y utlizamos la de bootstrap rounded-circle-->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- este es el fin de mi encabezado-->
+
+    <!--este es el inicio de mi contenido-->
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <nav><!--es para indicarle a google que es un menu se pueden tener hasta 3 y 4 menu-->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-users"></i> Amigos </a> <!--agregamos en bootstrap display block con d-block y para quitar la linea de bajo ponemos text decoration none-->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-envelope"></i> Mensajes Privados</a> <!--mensaje privado -->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-thumbs-up"></i>Página</a> <!-- le creamos un padding con p-2 para que separe un poco de los otros-->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-play"></i>Videos</a> <!--mr significa margin right-->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-file-image"></i>Fotos</a><!--los valores de edicion se le estan brindado directamente al icono-->
+                    <a class="d-block p-2 text-decoration-none text-secondary mr-3" href=""> <i class="fa fa-book"></i>Libros</a>
+
+                </nav>
+            </div>
+            
+            <div class="col"> <!--crearemos comentarios-->
+                <div class="row">
+                    <div class="col-auto"><!--col auto hace que se adapte la imagen al espacio-->
+                        <a href=""><img class="rounded-circle" src="/img/persona2.jpg" width="60" height="60" alt=""></a>
+                    </div>
+
+                    <div class="col"> <!-- crearemos un formulario-->
+                        <form action="">
+                            <textarea class="w-100 shadow-sm px-3 " placeholder="Publicar mensaje" name="" id=""></textarea> <!--w-100 tamaño completo-->
+                            <!--para que me agrupe solo una fila en between-->
+                            <div class=" d-flex justify-content-between border-bottom py-3">
+                                
+                            <div >
+                                <a class="text-secondary" href="" ><i class="fas fa-image mr-3"></i></a>
+                                <a class="text-secondary" href="" ><i class="fas fa-play mr-3"></i></a>
+                                <a class="text-secondary" href="" ><i class="fas fa-music mr-3"></i></a>
+                            </div>
+                                
+                            <div>
+                                <button class="bg-primary text-white border-0 rounded px-4 ">Publicar</button>
+                            </div>
+                        </form>
+
+                      </div>
+                        <!--para que me agrupe solo una fila en between-->
+            </div>    
+            </div>
+
+            <!--publicaciones-->
+            <div class="row">
+                <div class="col-auto">
+                    <a href="">
+                        <img class="rounded-circle" src="/img/persona2.jpg" width="60" height="60" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="pb-2">
+                        <h5>
+                            <a href="">Andrea Lorem</a>
+                        </h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio nesciunt adipisci enim. Unde maxime odit sed iure quibusdam culpa. Animi ut qui esse, voluptas officiis ad est vel voluptates.</p>
+                    <div class="d-flex justify-content-between">
+                        <button class="bg-primary text-white border-0 rounded py-0 px-4">
+                            <i class="far fa-thumbs-up">
+                            </i>
+                        </button>
+                        <p class="text-primary mb-0 py2"> 15 <i class="far fa-thumbs-up"></i></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-10 offset-2">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+
+                <div class="col-10 offset-2" >
+                    <div  class="row no-gutters mt-4 pb-3 border-bottom">
+                        <div class="col-auto">
+                            <a href="">
+                                <img  class="rounded-circle" src="/img/persona2.jpg" alt="" width="40" height="40">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <form action="">
+                                <textarea class="w-100 border text-secundary" placeholder="Comentario" name="" id="" ></textarea> <!--se quita col y el otro-->
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters mt-4 pb-3 border-bottom">
+                        <div class="col-auto">
+                            <a href="">
+                                <img class="rounded-circle " src="/img/persona2.jpg" width="40" height="40" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet consecteturs, blb bla bla bla bla</p>
+                            <a href="">Me gusta</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/bootstrap.min.js"></script>  <!--estos son los enlaces que maneja bootstrap-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+</body>
+</html>
